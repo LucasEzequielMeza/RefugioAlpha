@@ -1,0 +1,51 @@
+#contenedor {
+    display: grid;
+    grid-template-areas:
+        "img img nombre nombre"
+        "img img precio stock"
+        ". . itemCount itemCount"
+        "desc desc desc ."
+        "beneTit beneTit . . "
+        "bene bene bene .";
+
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60rem;
+    height: 400px;
+}
+
+.imgProd {
+    grid-area: img;
+
+}
+
+.nombreProd {
+    grid-area: nombre;
+}
+
+.precioProd {
+    grid-area: precio;
+}
+
+.stockProd {
+    grid-area: stock;
+}
+
+.itemCount {
+    grid-area: itemCount;
+}
+
+.descripcionProd {
+    grid-area: desc;
+}
+
+.beneficiosTitulo {
+    grid-area: beneTit;
+}
+
+.beneficiosProd {
+    grid-area: bene;
+}

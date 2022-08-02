@@ -9,7 +9,7 @@ const ItemListConteiner = () => {
 
     const obtenerDatosProductos = async () => {
         try {
-            const respuesta = await fetch('DATA/productos.json')
+            const respuesta = await fetch('Data/productos.json')
             const data = await respuesta.json()
             setListaDeProductos(data)
         } catch (error) {
