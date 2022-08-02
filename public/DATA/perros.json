@@ -1,0 +1,110 @@
+[
+    {
+        "id": "0",
+        "raza": "Beagle",
+        "nombre": "Lolo",
+        "edad": "5",
+        "descripcion": "Lolo es un perro de 5 años, es un perro cariñoso, le gusta jugar con los chicos y su juguete favorito son las pelotas de tenis",
+        "categoria": "chico",
+        "img": ""
+    },
+    {
+        "id": "1",
+        "raza": "Chihuahua Bolonka",
+        "nombre": "Bolt",
+        "edad": "2",
+        "descripcion": "Bolt es un Chihuahua de dos años, es un perro muy interactivo con las personas, cariñoso y jugueton, le gusta mucho jugar con otros animales",
+        "categoria": "chico",
+        "img": ""
+    },
+    {
+        "id": "2",
+        "raza": "Schnauzer",
+        "nombre": "Jack",
+        "edad": "8",
+        "descripcion": "Jack es un perrito de unos 8 años de edad, es muy tranquilo y amigable",
+        "categoria": "chico",
+        "img": ""
+    },
+    {
+        "id": "3",
+        "raza": "Shihtzu",
+        "nombre": "Milo",
+        "edad": "3",
+        "descripcion": "Milo es un perro muy cariñoso y le gusta jugar todo el tiempo, sobre todo con los nenes",
+        "categoria": "chico",
+        "img": ""
+    },
+    {
+        "id": "4",
+        "raza": "Border Collie",
+        "nombre": "Max",
+        "edad": "6",
+        "descripcion": "Max es un perro imperactivo, le gusta correr por el pasto y luego tomar una buena siesta bajo el sol, es cariñoso y le gustan los chicos ",
+        "categoria": "mediano",
+        "img": ""
+    },
+    {
+        "id": "5",
+        "raza": "BullDog",
+        "nombre": "Bingo",
+        "edad": "2",
+        "descripcion": "Bingo es un BullDog de dos años de edad, le encanta jugar con su pelota amarilla y correr tras ella",
+        "categoria": "mediano",
+        "img": ""
+    },
+    {
+        "id": "6",
+        "raza": "Labrador",
+        "nombre": "Marley",
+        "edad": "9",
+        "descripcion": "Marley es un Labrador de 9 años de edad, es un perro muy pasivo pero guardian, le gusta mucho descansar en el pasto",
+        "categoria": "mediano",
+        "img": ""
+    },
+    {
+        "id": "7",
+        "raza": "Pitbull Terrier",
+        "nombre": "Rufo",
+        "edad": "4",
+        "descripcion": "Rufo es un Pitbull de 4 años de edad, es un perro muy cariñoso, sobretodo con los chicos y su juguete preferido es su cuerdita",
+        "categoria": "mediano",
+        "img": ""
+    },
+    {
+        "id": "8",
+        "raza": "Dogo Argentino",
+        "nombre": "King",
+        "edad": "3",
+        "descripcion": "King es un Dogo Argentino, es un perro muy guardian, le gusta mucho pasear y olfatear todo lo que encuentra",
+        "categoria": "grande",
+        "img": ""
+    },
+    {
+        "id": "9",
+        "raza": "Galgo",
+        "nombre": "Scooby",
+        "edad": "5",
+        "descripcion": "Scooby es un Galgo de unos 5 años, es un perro con mucha energia y mucho amor para dar",
+        "categoria": "grande",
+        "img": ""
+    },
+    {
+        "id": "10",
+        "raza": "Pastor Aleman",
+        "nombre": "Chooper y Linda",
+        "edad": "2",
+        "descripcion": "Chooper y Linda son dos hermanos Pastor Aleman, se criaron juntos por lo que son inseparables, les gusta mucho jugar entre ellos, y disfrutar del agua",
+        "categoria": "grande",
+        "img": ""
+    },
+    {
+        "id": "11",
+        "raza": "Setter Ingles",
+        "nombre": "Nena",
+        "edad": "10",
+        "descripcion": "Nena es una perra Setter Ingles de unos 10 años de edad, es muy tranquila y pasiva pero muy juguetona",
+        "categoria": "grande",
+        "img": ""
+    }
+]

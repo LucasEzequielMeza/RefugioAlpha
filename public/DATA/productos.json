@@ -1,0 +1,314 @@
+[
+    {
+        "id": "0",
+        "nombre": "Raza Adultos 15 Kg",
+        "precio": "4200",
+        "marca": "Raza",
+        "descripcion": "Alimento Raza para perros adultos raza Mediana",
+        "descripcionCompleta": "Raza Perro Adulto tamaño mediano. Presentación de 15 kg. El alimento balanceado para perros RAZA sabor carne es el preferido por el paladar canino y una de nuestras variedades que tu mascota va a disfrutar en cada comida. Gracias a su complejo vitamínico mineral con Omega 3 y 6.",
+        "beneficios": [
+            "Ayudará a que tenga huesos sanos y fuertes, excelente visión, pelaje brillante y mayor vitalidad."
+        ],
+        "stock": 12,
+        "categoria": "alimentos",
+        "img": "./../IMG/ImgProductos/Alimentos Miniatura/razaAdultosMedianos.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Alimentos/razaAdultosMedianos.png"
+    },
+    {
+        "id": "1",
+        "nombre": "Raza Adultos 21 Kg",
+        "precio": "5500",
+        "marca": "Raza",
+        "descripcion": "Alimento Raza para perros adultos raza Grande",
+        "descripcionCompleta": "Raza Perro Adulto. Presentación de 21 kg. El alimento balanceado para perros RAZA sabor carne es el preferido por el paladar canino y una de nuestras variedades que tu mascota va a disfrutar en cada comida. Gracias a su complejo vitamínico mineral con Omega 3 y 6.",
+        "beneficios": [
+            "Ayudará a que tenga huesos sanos y fuertes, excelente visión, pelaje brillante y mayor vitalidad."
+        ],
+        "stock": 10,
+        "categoria": "alimentos",
+        "img": "./../IMG/ImgProductos/Alimentos Miniatura/razaAdultosGrandes.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Alimentos/razaAdultosGrandes.png"
+    },
+    {
+        "id": "2",
+        "nombre": "Pedigree Adultos 21 Kg",
+        "precio": "6400",
+        "marca": "Pedigree",
+        "descripcion": "Alimento Pedigree Carne y pollo perro Adulto",
+        "descripcionCompleta": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Pedigree podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
+        "beneficios": [
+            "Tu mascota siempre saludable",
+            "Beneficios del alimento seco",
+            "Proteína para una nutrición completa"
+        ],
+        "stock": 6,
+        "categoria": "alimentos",
+        "img": "./../IMG/ImgProductos/Alimentos Miniatura/pedigreeAdultosMedianos.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Alimentos/pedigreeAdultosMedianos.png"
+    },
+    {
+        "id": "3",
+        "nombre": "Pedigree Adultos 24 Kg",
+        "precio": "7200",
+        "marca": "Pedigree",
+        "descripcion": "Alimento Pedigree Carne, Cereales y pollo perro Adulto",
+        "descripcionCompleta": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Pedigree podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
+        "beneficios": [
+            "Tu mascota siempre saludable",
+            "Beneficios del alimento seco",
+            "Proteína para una nutrición completa"
+        ],
+        "stock": 8,
+        "categoria": "alimentos",
+        "img": "./../IMG/ImgProductos/Alimentos Miniatura/pedigreeAdultosGrandes.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Alimentos/pedigreeAdultosGrandes.png"
+    },
+    {
+        "id": "4",
+        "nombre": "Royal Canin 15 Kg",
+        "precio": "12800",
+        "marca": "Royal Canin",
+        "descripcion": "Alimento Royal Canin para perro Medium Adulto",
+        "descripcionCompleta": "Alimento húmedo para perros adultos de talla mediana (de 11 a 25 kg). Desde los 12 meses hasta los 10 años de edad.",
+        "beneficios": [
+            "Elevada digestibilidad",
+            "Defensas naturales",
+            "Omega 3: EPA - DHA"
+        ],
+        "stock": 8,
+        "categoria": "alimentos",
+        "img": "./../IMG/ImgProductos/Alimentos Miniatura/royalCaninAdultosMedianos.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Alimentos/royalCaninAdultosMedianos.png"
+    },
+    {
+        "id": "5",
+        "nombre": "Royal Canin 18 Kg",
+        "precio": "15200",
+        "marca": "Royal Canin",
+        "descripcion": "Alimento Royal Canin para perro Maxi Adulto",
+        "descripcionCompleta": "Alimento húmedo para perros adultos de talla grande (de 26 a 44 kg). Desde los 15 meses hasta los 8 años de edad.",
+        "beneficios": [
+            "Elevada digestibilidad",
+            "Ayuda a mantener los huesos y las articulaciones saludables en los perros de razas grandes.",
+            "Omega 3: EPA - DHA"
+        ],
+        "stock": "15",
+        "categoria": "alimentos",
+        "img": "./../IMG/ImgProductos/Alimentos/royalCaninAdultosGrandes.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Alimentos/royalCaninAdultosGrandes.png"
+    },
+    {
+        "id": "6",
+        "nombre": "Benebon Zaggler",
+        "precio": "2900",
+        "marca": "Benebone",
+        "descripcion": "Juguete masticable extra resistente",
+        "descripcionCompleta": "El Juguete Benebone Zaggler Bac, es un juguete masticable extra resistente y saborizado 100% con tocino verdadero, lo que brinda un sabor real y natural que atrapa el interés de tu mascota por horas. Su diseño cilíndrico hace que ruede con facilidad, incentivando a tu mascota que lo persiga y se entretenga.",
+        "beneficios": [
+            "Su sabor natural es mucho más palatable para tu perro.",
+            "Está fabricado con materiales extra resistentes, lo que asegura una duración prolongada de masticado.",
+            "Ideal para perros que mastican mucho."
+        ],
+        "stock": 15,
+        "categoria": "juguetes",
+        "subCategoria": "dental",
+        "img": "./../IMG/ImgProductos/Juguetes Miniatura/Dental/beneboneMordillo.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Dental/beneboneMordillo.png"
+    },
+    {
+        "id": "7",
+        "nombre": "Kong Chewstix Hueso",
+        "precio": "5700",
+        "marca": "Kong",
+        "descripcion": "Juguete de hueso a base de madera",
+        "descripcionCompleta": "El Juguete Kong Chewstix Hueso es un juguete que contiene madera verdadera, lo que provee una experiencia de masticado segura y satisfactoria para tu mascota. Está diseñado para aguantar la masticación de tu perro, ya que es súper resistente y se desgasta a un ritmo menor que otros juguetes. Además, sus ejes redondos y textura estimula a tu mascota mientras ayuda a limpiarle los dientes y encías.",
+        "beneficios": [
+            "Resistente y duradero.",
+            "Aromatizado con olor a tocino.",
+            "Promueve la salud dental de tu mascota."
+        ],
+        "stock": 6,
+        "categoria": "juguetes",
+        "subCategoria": "dental",
+        "img": "./../IMG/ImgProductos/Juguetes Miniatura/Dental/kongHueso.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Dental/kongHueso.png"
+    },
+    {
+        "id": "8",
+        "nombre": "Hueso Goma CanCat",
+        "precio": "3600",
+        "marca": "CanCat",
+        "descripcion": "Hueso de plastico antimicrobial sabor carne",
+        "descripcionCompleta": "El Hueso CanCat Antimicrobial Sabor Carne, es una muy buena elección para tu amigo pequeño de cuatro patas, es un Hueso anti estrés con sabor a carne. Ideal Para Cachorro.",
+        "beneficios": [
+            "Resistente y duradero.",
+            "Aromatizado con olor a carne",
+            "Promueve la salud dental de tu mascota."
+        ],
+        "stock": 13,
+        "categoria": "juguetes",
+        "subCategoria": "dental",
+        "img": "./../IMG/ImgProductos/Juguetes Miniatura/Dental/canCatHueso.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Dental/canCatHueso.png"
+    },
+    {
+        "id": "9",
+        "nombre": "Kong Extreme",
+        "precio": "8000",
+        "marca": "Kong",
+        "descripcion": "Juguete con 4 espacios para rellenar con golosinas",
+        "descripcionCompleta": "El Juguete Kong Extreme Goodie Ribbon, tiene cuatro espacios para rellenar con la golosina favorita de tu mascota, maximizando el desafío y estimulando su mente. Además, está fabricado con el caucho negro de Kong, que esta especialmente diseñado para resistir a los masticadores más tenaces.",
+        "beneficios": [
+            "Fabricado para resistir la masticación intensa de tu mascota.",
+            "Durable y resistente.",
+            "Fácil de lavar."
+        ],
+        "stock": 7,
+        "categoria": "juguetes",
+        "subCategoria": "interactivo",
+        "img": "./../IMG/ImgProductos/Juguetes Miniatura/Interactivo/kongExtrem.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Interactivo/kongExtrem.png"
+    },
+    {
+        "id": "10",
+        "nombre": "Kong Traxx",
+        "precio": "7900",
+        "marca": "Kong",
+        "descripcion": "Mordillo con aberturas para colocar su comida",
+        "descripcionCompleta": "El Juguete Kong Traxx, es ideal para los masticadores más tenaces, ya que está diseñado con el caucho negro de Kong para asegurar una experiencia de masticación excepcional. Ofrece diferentes texturas que incentivan a tu mascota a masticar, además de estar diseñado para doblarse y rebotar para lograr así una sesión de juego más divertida.",
+        "beneficios": [
+            "Puede rellenarse con golosinas para estimular aún más a tu perro.",
+            "Extra resistente y duradero.",
+            "Ayuda a que tu perro tenga dientes y encías sanas."
+        ],
+        "stock": 10,
+        "categoria": "juguetes",
+        "subCategoria": "interactivo",
+        "img": "./../IMG/ImgProductos/Juguetes Miniatura/Interactivo/kongTraxx.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Interactivo/kongTraxx.png"
+    },
+    {
+        "id": "11",
+        "nombre": "Kong Classic",
+        "precio": "14000",
+        "marca": "Kong",
+        "descripcion": "Ideal para entretener a su mascota a la hora de la comida",
+        "descripcionCompleta": "El Kong clásico es el estándar dorado de los juguetes de perro y ofrece un enriquecimiento a los canes al ayudarlos a satisfacer sus necesidades instintivas. Su fórmula es ultra durable y tiene un pique impredecible para jugar con las mascotas.",
+        "beneficios": [
+            "Enseña a masticar de manera correcta, a la vez enriqueciendo mentalmente a los cachorros.",
+            "La goma de los juguetes Kong está diseñada especificamente para los dientes de un cachorro.",
+            "Piques impredecibles a la hora de arrojar el juguete.",
+            "Recomendado por veterinarios y entrenadores alrededor del mundo."
+        ],
+        "stock": 4,
+        "categoria": "juguetes",
+        "subCategoria": "interactivo",
+        "img": "./../IMG/ImgProductos/Juguetes Miniatura/Interactivo/kongClassic.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Interactivo/kongClassic.png"
+    },
+    {
+        "id": "12",
+        "nombre": "Pelota Puppis",
+        "precio": "420",
+        "marca": "Puppis",
+        "descripcion": "Ideal para divertirte con tu perro en tiempos libres",
+        "descripcionCompleta": "La Pelota Puppis Tennis, es un juguete ideal para que te diviertas con tu perro en los momentos libres. Está diseñada con materiales resistentes y duraderos.",
+        "beneficios": [
+            "Resistente."
+        ],
+        "stock": 20,
+        "categoria": "juguetes",
+        "subCategoria": "pelota",
+        "img": "./../IMG/ImgProductos/Juguetes Miniatura/Pelota/pelotaPuppis.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Pelota/pelotaPuppis.png"
+    },
+    {
+        "id": "13",
+        "nombre": "Kong Signature",
+        "precio": "2300",
+        "marca": "Kong",
+        "descripcion": "Pelota ultra resistente y duradera, para actividades interactivas",
+        "descripcionCompleta": "¡La bola KONG fomenta el juego de recuperación en tu perro! El caucho KONG Classic duradero, inflable y natural le da un rebote para juegos divertidos de alcance, que ofrece toneladas de actividades saludables e interactivas.",
+        "beneficios": [
+            "Resistente a pinchazos, asegurando un juego seguro y continuo para tu cachorro."
+        ],
+        "stock": 17,
+        "categoria": "juguetes",
+        "subCategoria": "pelota",
+        "img": "./../IMG/ImgProductos/Juguetes Miniatura/Pelota/pelotaKong.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Pelota/pelotaKong.png"
+    },
+    {
+        "id": "14",
+        "nombre": "Kong Airdog",
+        "precio": "2600",
+        "marca": "Kong",
+        "descripcion": "Juguete con sonido, para una busqueda mas sencilla",
+        "descripcionCompleta": "El Juguete Kong Airdog Football, combina dos juguetes clásicos para perros, la pelota de tenis y el squeaker, para crear el juguete de búsqueda perfecto. El material no abrasivo y de alta calidad no desgastará los dientes de los perros.",
+        "beneficios": [
+            "Material de tenis KONG no abrasivo.",
+            "Más suave en los dientes.",
+            "Con el sonido que les encanta.",
+            "Ideal para jugar con tu perro y promover su salud."
+        ],
+        "stock": 13,
+        "categoria": "juguetes",
+        "subCategoria": "pelota",
+        "img": "./../IMG/ImgProductos/Juguetes Miniatura/Pelota/pelotaSqueaker.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Pelota/pelotaSqueaker.png"
+    },
+    {
+        "id": "15",
+        "nombre": "Soga CanCat Doble",
+        "precio": "2500",
+        "marca": "CanCat",
+        "descripcion": "Soga diseñada para jugar al 'tira y afloje' ",
+        "descripcionCompleta": "La Soga Cancat Doble 12 pertenece a la línea de sogas FUN, diseñada especialmente para que tu mascota libere su stress mientras juega en el clásico “tira y afloje”. Ideal para interactuar con nuestro perro. También se usan para que tu mejor amigo pueda morder y fortalecer sus dientes.",
+        "beneficios": [
+            "Anti-stress",
+            "Confeccionada con tela resistente."
+        ],
+        "stock": 7,
+        "categoria": "juguetes",
+        "subCategoria": "soga",
+        "img": "./../IMG/ImgProductos/Juguetes Miniatura/Soga/CanCatDoble.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Soga/CanCatDoble.png"
+    },
+    {
+        "id": "16",
+        "nombre": "Soga CanCat Flotadora",
+        "precio": "3800",
+        "marca": "CanCat",
+        "descripcion": "Soga ideal para moderder, tirar y traer ",
+        "descripcionCompleta": "La Soga CanCat Flotadora es ideal para jugar a tironear con tu mascota, será el juguete favorito de su perro para morder, tirar, traer y divertirse a todas horas.",
+        "beneficios": [
+            "Diseño colorido",
+            "Ideal para jugar a tironear con tu mascota",
+            "Confeccionada con materiales duraderos",
+            "Favorece la higiene dental"
+        ],
+        "stock": 4,
+        "categoria": "juguetes",
+        "subCategoria": "soga",
+        "img": "./../IMG/ImgProductos/Juguetes Miniatura/Soga/CanCatFlotadora.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Soga/CanCatFlotadora.png"
+    },
+    {
+        "id": "17",
+        "nombre": "Soga Trenzada",
+        "precio": "2000",
+        "marca": "K9",
+        "descripcion": "Soga con mas resistencia para jugar tira y afloje",
+        "descripcionCompleta": "Puede usarse como herramienta durante las sesiones de adiestramiento canino o como simple juguete mordedor. Su forma especial permite un agarre cómodo a todos los perros. El diseño de la linea K9 cuenta con diferentes texturas con relieves que masajean las encías y limpian los dientes, además de resultar mucho más atractivo para tu mascota.",
+        "beneficios": [
+            "Está hecho con material muy resistente a la mordida y a los tirones para conseguir un juguete duradero.",
+            "Un mordedor muy completo que estimula los sentidos de los perros para hacer ejercicio.",
+            "Es una gran opción para jugar a tironear con tu mascota y mejorar su vínculo."
+        ],
+        "stock": 10,
+        "categoria": "juguetes",
+        "subCategoria": "soga",
+        "img": "./../IMG/ImgProductos/Juguetes Miniatura/Soga/CanCatTrenzada.png",
+        "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Soga/CanCatTrenzada.png"
+    }
+]
