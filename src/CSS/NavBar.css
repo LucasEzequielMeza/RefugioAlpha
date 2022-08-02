@@ -1,0 +1,12 @@
+.estilos {
+    background-color: #FEBE10;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.logo {
+    border-radius: 80%;
+    max-height: 55px;
+}
