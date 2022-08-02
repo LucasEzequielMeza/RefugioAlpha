@@ -1,0 +1,65 @@
+.productos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cardStyle {
+    width: 15rem;
+    height: 25rem;
+    margin: .5rem;
+    align-items: center;
+}
+
+.cardImg {
+    width: 200px;
+    height: 200px;
+}
+
+#cardBody {
+    display: grid;
+    grid-template-areas:
+        "nombre nombre nombre"
+        "desc desc desc"
+        "cat cat cat"
+        "precio precio stock";
+
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+}
+
+#nombre {
+    grid-area: nombre;
+
+}
+
+#descripcion {
+    grid-area: desc;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+#categoria {
+    grid-area: cat;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+#precio {
+    grid-area: precio;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+#stock {
+    grid-area: stock;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+#informacion {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}

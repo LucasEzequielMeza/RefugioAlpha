@@ -5,12 +5,12 @@ const NavBar = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg estilos">
+                <a className="navbar-brand" href="index.html">
+                    <img src="./IMG/Logo/AlphaIcon.png" className="d-inline-block align-center logo" alt="Logo"
+                        loading="lazy" />
+                    Refugio Alpha
+                </a>
                 <div className="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="./../../../public/IMG/Logo/AlphaIcon.jpeg" className="d-inline-block align-center logo" alt="Logo"
-                            loading="lazy">
-                            Refugio Alpha </img>
-                    </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
