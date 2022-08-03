@@ -10,3 +10,8 @@
     border-radius: 80%;
     max-height: 55px;
 }
+
+.nav {
+    align-items: center;
+    justify-content: center;
+}

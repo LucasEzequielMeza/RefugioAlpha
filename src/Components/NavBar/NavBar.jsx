@@ -1,30 +1,46 @@
 import React from 'react'
 import "./../../CSS/NavBar.css"
+import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import CartWidget from './CartWidget'
+import Logo from './Logo'
+import { Link } from "react-router-dom";
 const NavBar = () => {
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg estilos">
-                <a className="navbar-brand" href="index.html">
-                    <img src="./IMG/Logo/AlphaIcon.png" className="d-inline-block align-center logo" alt="Logo"
-                        loading="lazy" />
-                    Refugio Alpha
-                </a>
-                <div className="container-fluid">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div className="navbar-nav">
-                            <a className="nav-link" href="perros.html">Perros</a>
-                            <a className="nav-link" href='nosotros.html'>Nosotros</a>
-                            <a className="nav-link" href='contacto.html'>Contacto</a>
-                        </div>
-                    </div>
+        <>
+
+            <Navbar className='NavBG estilos' >
+                <Container>
+                    <Logo />
+                    <Navbar.Brand as={Link} to='/'> Refugio Alpha
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse className='col-1 nav' id="basic-navbar-nav">
+                        <Nav className="me-auto">
+                            <Nav.Link as={Link} to='/'>Inicio</Nav.Link>
+                            <NavDropdown title="Perros en adopcion" id="basic-nav-dropdown">
+                                <NavDropdown.Item as={Link} to='/razaChicos'>Chicos</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to='/razaMedianos'>Medianos</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to='/razaGrandes'>Grandes</NavDropdown.Item>
+                            </NavDropdown>
+                            <NavDropdown title="Productos" id="basic-nav-dropdown">
+                                <NavDropdown.Item as={Link} to='/alimentos'>Alimentos</NavDropdown.Item>
+                                <NavDropdown title="Juguetes" id="basic-nav-dropdown">
+                                    <NavDropdown.Item as={Link} to='/dental'>Dental</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to='/sogas'>Sogas</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to='/interactivos'>Interactivos</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to='/pelotas'>Pelotas</NavDropdown.Item>
+                                </NavDropdown>
+                            </NavDropdown>
+                            <Nav.Link as={Link} to='/nosotros' >Nosotros</Nav.Link>
+                            <Nav.Link as={Link} to='/contacto' >Contacto</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
                     <CartWidget />
-                </div>
-            </nav>
-        </div>
+                </Container>
+            </Navbar>
+            <section>
+            </section>
+        </>
     )
 }
 

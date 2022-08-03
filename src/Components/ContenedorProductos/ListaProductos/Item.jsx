@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './../../../CSS/productos.css'
-const Item = ({ producto }) => {
+const Item = ({ producto, perro }) => {
     return (
         <div>
             <div className="card cardStyle" >
