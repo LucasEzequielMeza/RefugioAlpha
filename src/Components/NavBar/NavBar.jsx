@@ -18,17 +18,17 @@ const NavBar = () => {
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to='/'>Inicio</Nav.Link>
                             <NavDropdown title="Perros en adopcion" id="basic-nav-dropdown">
-                                <NavDropdown.Item as={Link} to='/razaChicos'>Chicos</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to='/razaMedianos'>Medianos</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to='/razaGrandes'>Grandes</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to='categoria/razaChicos'>Chicos</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to='categoria/razaMedianos'>Medianos</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to='categoria/razaGrandes'>Grandes</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Productos" id="basic-nav-dropdown">
-                                <NavDropdown.Item as={Link} to='/alimentos'>Alimentos</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to='categoria/alimentos'>Alimentos</NavDropdown.Item>
                                 <NavDropdown title="Juguetes" id="basic-nav-dropdown">
-                                    <NavDropdown.Item as={Link} to='/dental'>Dental</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to='/sogas'>Sogas</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to='/interactivos'>Interactivos</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to='/pelotas'>Pelotas</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to='categoria/juguetesDental'>Dental</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to='categoria/juguetesSoga'>Sogas</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to='categoria/juguetesInteractivo'>Interactivos</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to='categoria/juguetesPelota'>Pelotas</NavDropdown.Item>
                                 </NavDropdown>
                             </NavDropdown>
                             <Nav.Link as={Link} to='/nosotros' >Nosotros</Nav.Link>

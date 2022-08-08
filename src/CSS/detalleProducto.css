@@ -1,51 +1,75 @@
-#contenedor {
+.contenedorDetalleProducto {
+    background-color: #e0dfdc;
+}
+
+.detalleProducto {
     display: grid;
     grid-template-areas:
-        "img img nombre nombre"
-        "img img precio stock"
-        ". . itemCount itemCount"
-        "desc desc desc ."
-        "beneTit beneTit . . "
-        "bene bene bene .";
+        "img img datos datos"
+        "img img datos datos"
+        "precio precio bene bene"
+        "precio precio bene bene";
 
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-rows: auto auto auto auto;
     justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 60rem;
-    height: 400px;
+
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px 10px;
 }
 
-.imgProd {
+.imgDetalleProducto {
     grid-area: img;
-
+    height: 350px;
+    width: 450px;
 }
 
-.nombreProd {
-    grid-area: nombre;
+.datosDetalleProducto {
+    grid-area: datos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 650px;
 }
 
-.precioProd {
-    grid-area: precio;
-}
-
-.stockProd {
-    grid-area: stock;
-}
-
-.itemCount {
-    grid-area: itemCount;
-}
-
-.descripcionProd {
-    grid-area: desc;
-}
-
-.beneficiosTitulo {
-    grid-area: beneTit;
-}
-
-.beneficiosProd {
+.beneficioDetalleProducto {
     grid-area: bene;
+}
+
+.precioAgregarDetalleProducto {
+    grid-area: precio;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.nombreDetalleProducto {
+    margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.descripcionDetalleProducto {
+    font-size: 1.25rem;
+    margin: 10px;
+    font-style: initial;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.tituloBeneficioDetalleProducto {
+    font-size: 1.75rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.beneficiosDetalleProducto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }

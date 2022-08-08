@@ -5,40 +5,46 @@ import { useParams } from 'react-router-dom';
 
 const ItemListConteiner = () => {
     const [listaDeProductos, setListaDeProductos] = useState([])
-    const [loading, setLoading] = useState(true)
     const [listaDePerros, setListaDePerros] = useState([])
+    const [loading, setLoading] = useState(true)
     const { categoria } = useParams()
-    const obtenerDatosProductos = async () => {
-        try {
-            const respuesta = await fetch('Data/productos.json')
-            const data = await respuesta.json()
-            setListaDeProductos(data)
-        } catch (error) {
-            console.log(error)
-        }
-    }
-
-    /*const obtenerDatosPerros = async () => {
-        try {
-            const respuesta = await fetch('DATA/perros.json')
-            const data = await respuesta.json()
-            setListaDePerros(data)
-        } catch (error) {
-            console.log(error)
-        }
-    }*/
 
     useEffect(() => {
         setTimeout(() => {
-            obtenerDatosProductos()
-            //obtenerDatosPerros()
+            fetch('../Data/productos.json')
+                .then((respuesta) => respuesta.json())
+                .then((respuesta) => {
+                    if (categoria) {
+                        setListaDeProductos(respuesta.filter((producto) => producto.categoria === categoria))
+                    } else {
+                        setListaDeProductos(respuesta)
+                    }
+                })
             setLoading(false)
-        }, 2000);
-    }, [])
+        }, 2000)
+    }, [categoria])
+
+    useEffect(() => {
+        setTimeout(() => {
+            fetch('../Data/perros.json')
+                .then((respuesta) => respuesta.json())
+                .then((respuesta) => {
+                    if (categoria) {
+                        setListaDePerros(respuesta.filter((perros) => perros.categoria === categoria))
+                    } else {
+                        setListaDePerros(respuesta)
+                    }
+                })
+            setLoading(false)
+        }, 2000)
+    }, [categoria])
+
+
+
 
     return (
         <div>
-            {loading ? <p>Cargando...</p> : <ItemList listaProductos={listaDeProductos} />}
+            {loading ? <p>Loading...</p> : <ItemList listaProductos={listaDeProductos} listaDePerros={listaDePerros} />}
         </div>
     )
 }
