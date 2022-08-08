@@ -14,13 +14,6 @@ const ItemDetailsConteiner = () => {
             .then((data) => setProducto(data.find((producto) => producto.id === id))
             );
     }
-
-    useEffect(() => {
-        setTimeout(() => {
-            mostrarUnProducto(id)
-        }, 1000)
-    }, [id])
-
     const mostrarUnPerro = (id) => {
         fetch('../Data/perros.json')
             .then((respuesta) => respuesta.json())
@@ -30,13 +23,15 @@ const ItemDetailsConteiner = () => {
 
     useEffect(() => {
         setTimeout(() => {
+            mostrarUnProducto(id)
             mostrarUnPerro(id)
         }, 1000)
     }, [id])
 
     return (
         <div>
-            <div>{producto.length !== 0 ? (<ItemDetail item={producto} />) : (<h1>Loading...</h1>)}</div>
+            {producto.length !== 0 ? <ItemDetail item={producto} /> : <h2>Loading...</h2>}
+            {/* {perro.length !== 0 ? <ItemDetailPerros itemPerro={perro} /> : <h2>Loading...</h2>}*/}
         </div>
     )
 }

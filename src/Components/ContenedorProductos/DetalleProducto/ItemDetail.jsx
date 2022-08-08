@@ -1,10 +1,14 @@
 import React from 'react'
 import ItemCount from '../../AgregarProductos/ItemCount'
 import './../../../CSS/detalleProducto.css'
+import { useNavigate } from "react-router-dom";
 
 const ItemDetail = ({ item }) => {
+    const navigate = useNavigate();
+
     const onAdd = (cantidadItems) => {
         console.log(`Agregaste ${cantidadItems} de items al carrito`)
+        navigate('/cart')
     }
     return (
         <div className='contenedorDetalleProducto'>
