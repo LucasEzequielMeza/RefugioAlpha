@@ -13,7 +13,7 @@ const Item = ({ producto }) => {
                         <p className="card-text" id='stock'>Stock: {producto.stock}</p>
                         <p className="card-text" id='precio'>Precio: $ {producto.precio}</p>
                     </div>
-                    <Link to={`/item/${producto.id}`}><button id='informacion'>Informacion</button></Link>
+                    <Link to={`/prod/${producto.id}`}><button id='informacion'>Informacion</button></Link>
                 </div>
             </div>
         </div>

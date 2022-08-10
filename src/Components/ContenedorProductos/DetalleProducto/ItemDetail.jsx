@@ -20,7 +20,7 @@ const ItemDetail = ({ item }) => {
                 <div className='beneficioDetalleProducto'>
                     <p className="tituloBeneficioDetalleProducto">Beneficios</p>
                     <ul className='beneficiosDetalleProducto'>
-                        {item.beneficios.map((item, index) => <li key={index}>{item}</li>)}
+                        {item.beneficios.map((beneficio, index) => <li key={index}>{beneficio}</li>)}
                     </ul>
                 </div>
                 <div className='precioAgregarDetalleProducto'>
@@ -33,4 +33,8 @@ const ItemDetail = ({ item }) => {
     )
 }
 
+<<<<<<< main:src/Components/ContenedorProductos/DetalleProducto/ItemDetail.jsx
 export default ItemDetail
+=======
+export default ItemDetailProductos
+>>>>>>> local:src/Components/ContenedorProductos/DetalleProducto/ItemDetailProductos.jsx
