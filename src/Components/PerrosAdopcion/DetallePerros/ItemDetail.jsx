@@ -15,7 +15,7 @@ const ItemDetail = ({ itemPerro }) => {
                     <h6 className='descripcionDetallePerro'>{itemPerro.descripcion}</h6>
                     <p className='edadDetallePerro'>Edad: {itemPerro.edad}</p>
                     <p className='razaDetallePerro'>Tipo de raza: {itemPerro.raza}</p>
-                    <button className='AdoptarPerro'>Adoptar</button>
+                    <button className='AdoptarPerro'>Adoptar perro</button>
                 </div>
             </div>
             <br />

@@ -123,7 +123,7 @@ const ItemDetailsConteiner = () => {
     return (
         <div>
             <div>
-                {doc === ('../Data/perros.json') ? <ItemDetail itemPerro={ruta} /> : <ItemDetailProductos item={ruta} />}
+                {doc !== ('../Data/perros.json') ? <ItemDetailProductos item={ruta} /> : <ItemDetail itemPerro={ruta} />}
             </div>
         </div>
     )
