@@ -1,13 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import './../../../CSS/productos.css'
-const Item = ({ producto }) => {
+const ItemProductos = ({ producto }) => {
     return (
         <div>
             <div className='container'>
                 <div className="card cardStyle cardProductos" >
-                    <img className='cardImg' src={producto.img} alt="" />
-                    <div id='cardBody'>
+                    <img className='cardImg cardImgProductos' src={producto.img} alt="" />
+                    <div id='cardBody cardProducto'>
                         <h5 className="card-title" id='nombre'>{producto.nombre}</h5>
                         <p className="card-text" id='descripcion'> {producto.descripcion}</p>
                         <p className="card-text" id='stock'>Stock: {producto.stock}</p>
@@ -20,4 +20,4 @@ const Item = ({ producto }) => {
     )
 }
 
-export default Item
+export default ItemProductos
