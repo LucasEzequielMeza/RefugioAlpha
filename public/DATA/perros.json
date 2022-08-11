@@ -1,110 +1,134 @@
 [
     {
-        "id": "0",
+        "id": "0p",
         "raza": "Beagle",
         "nombre": "Lolo",
         "edad": "5",
         "descripcion": "Lolo es un perro de 5 años, es un perro cariñoso, le gusta jugar con los chicos y su juguete favorito son las pelotas de tenis",
-        "categoria": "chico",
-        "img": ""
+        "descripcionCompleta": "",
+        "categoria": "razaChicos",
+        "img": "./../IMG/ImgPerros/ChicosFotoCard/Beagle.jpg",
+        "imgDescripcion": "./../IMG/ImgPerros/Chicos/Beagle.jpg"
     },
     {
-        "id": "1",
-        "raza": "Chihuahua Bolonka",
+        "id": "1p",
+        "raza": "Bolonka",
         "nombre": "Bolt",
         "edad": "2",
         "descripcion": "Bolt es un Chihuahua de dos años, es un perro muy interactivo con las personas, cariñoso y jugueton, le gusta mucho jugar con otros animales",
-        "categoria": "chico",
-        "img": ""
+        "descripcionCompleta": "",
+        "categoria": "razaChicos",
+        "img": "./../IMG/ImgPerros/ChicosFotoCard/ChiuahuaBolonka.png",
+        "imgDescripcion": "./../IMG/ImgPerros/Chicos/ChiuahuaBolonka.png"
     },
     {
-        "id": "2",
+        "id": "2p",
         "raza": "Schnauzer",
         "nombre": "Jack",
         "edad": "8",
         "descripcion": "Jack es un perrito de unos 8 años de edad, es muy tranquilo y amigable",
-        "categoria": "chico",
-        "img": ""
+        "descripcionCompleta": "",
+        "categoria": "razaChicos",
+        "img": "./../IMG/ImgPerros/ChicosFotoCard/SchnauzerMiniatura.jpg",
+        "imgDescripcion": "./../IMG/ImgPerros/Chicos/SchnauzerMiniatura.jpg"
     },
     {
-        "id": "3",
+        "id": "3p",
         "raza": "Shihtzu",
         "nombre": "Milo",
         "edad": "3",
         "descripcion": "Milo es un perro muy cariñoso y le gusta jugar todo el tiempo, sobre todo con los nenes",
-        "categoria": "chico",
-        "img": ""
+        "descripcionCompleta": "",
+        "categoria": "razaChicos",
+        "img": "./../IMG/ImgPerros/ChicosFotoCard/ShihTzu.jpg",
+        "imgDescripcion": "./../IMG/ImgPerros/Chicos/ShihTzu.jpg"
     },
     {
-        "id": "4",
+        "id": "4p",
         "raza": "Border Collie",
         "nombre": "Max",
         "edad": "6",
         "descripcion": "Max es un perro imperactivo, le gusta correr por el pasto y luego tomar una buena siesta bajo el sol, es cariñoso y le gustan los chicos ",
-        "categoria": "mediano",
-        "img": ""
+        "descripcionCompleta": "",
+        "categoria": "razaMedianos",
+        "img": "./../IMG/ImgPerros/MedianosFotoCard/BorderCollie.png",
+        "imgDescripcion": "./../IMG/ImgPerros/Medianos/BorderCollie.png"
     },
     {
-        "id": "5",
+        "id": "5p",
         "raza": "BullDog",
         "nombre": "Bingo",
         "edad": "2",
         "descripcion": "Bingo es un BullDog de dos años de edad, le encanta jugar con su pelota amarilla y correr tras ella",
-        "categoria": "mediano",
-        "img": ""
+        "descripcionCompleta": "",
+        "categoria": "razaMedianos",
+        "img": "./../IMG/ImgPerros/MedianosFotoCard/BullDog.png",
+        "imgDescripcion": "./../IMG/ImgPerros/Medianos/BullDog.png"
     },
     {
-        "id": "6",
+        "id": "6p",
         "raza": "Labrador",
         "nombre": "Marley",
         "edad": "9",
         "descripcion": "Marley es un Labrador de 9 años de edad, es un perro muy pasivo pero guardian, le gusta mucho descansar en el pasto",
-        "categoria": "mediano",
-        "img": ""
+        "descripcionCompleta": "",
+        "categoria": "razaMedianos",
+        "img": "./../IMG/ImgPerros/MedianosFotoCard/Labrador.jpg",
+        "imgDescripcion": "./../IMG/ImgPerros/Medianos/Labrador.jpg"
     },
     {
-        "id": "7",
+        "id": "7p",
         "raza": "Pitbull Terrier",
         "nombre": "Rufo",
         "edad": "4",
         "descripcion": "Rufo es un Pitbull de 4 años de edad, es un perro muy cariñoso, sobretodo con los chicos y su juguete preferido es su cuerdita",
-        "categoria": "mediano",
-        "img": ""
+        "descripcionCompleta": "",
+        "categoria": "razaMedianos",
+        "img": "./../IMG/ImgPerros/MedianosFotoCard/PitbullTerrier.jpg",
+        "imgDescripcion": "./../IMG/ImgPerros/Medianos/PitbullTerrier.jpg"
     },
     {
-        "id": "8",
+        "id": "8p",
         "raza": "Dogo Argentino",
         "nombre": "King",
         "edad": "3",
         "descripcion": "King es un Dogo Argentino, es un perro muy guardian, le gusta mucho pasear y olfatear todo lo que encuentra",
-        "categoria": "grande",
-        "img": ""
+        "descripcionCompleta": "",
+        "categoria": "razaGrandes",
+        "img": "./../IMG/ImgPerros/GrandesFotoCard/DogoArgentino.png",
+        "imgDescripcion": "./../IMG/ImgPerros/Grandes/DogoArgentino.png"
     },
     {
-        "id": "9",
+        "id": "9p",
         "raza": "Galgo",
         "nombre": "Scooby",
         "edad": "5",
         "descripcion": "Scooby es un Galgo de unos 5 años, es un perro con mucha energia y mucho amor para dar",
-        "categoria": "grande",
-        "img": ""
+        "descripcionCompleta": "",
+        "categoria": "razaGrandes",
+        "img": "./../IMG/ImgPerros/GrandesFotoCard/Galgo.jpg",
+        "imgDescripcion": "./../IMG/ImgPerros/Grandes/Galgo.jpg"
     },
     {
-        "id": "10",
+        "id": "10p",
         "raza": "Pastor Aleman",
         "nombre": "Chooper y Linda",
         "edad": "2",
         "descripcion": "Chooper y Linda son dos hermanos Pastor Aleman, se criaron juntos por lo que son inseparables, les gusta mucho jugar entre ellos, y disfrutar del agua",
-        "categoria": "grande",
-        "img": ""
+        "descripcionCompleta": "",
+        "categoria": "razaGrandes",
+        "img": "./../IMG/ImgPerros/GrandesFotoCard/PastorAleman.png",
+        "imgDescripcion": "./../IMG/ImgPerros/Grandes/PastorAleman.png"
     },
     {
-        "id": "11",
+        "id": "11p",
         "raza": "Setter Ingles",
         "nombre": "Nena",
         "edad": "10",
         "descripcion": "Nena es una perra Setter Ingles de unos 10 años de edad, es muy tranquila y pasiva pero muy juguetona",
-        "categoria": "grande",
-        "img": ""
+        "descripcionCompleta": "",
+        "categoria": "razaGrandes",
+        "img": "./../IMG/ImgPerros/GrandesFotoCard/SetterIngles.jpg",
+        "imgDescripcion": "./../IMG/ImgPerros/Grandes/SetterIngles.jpg"
     }
 ]

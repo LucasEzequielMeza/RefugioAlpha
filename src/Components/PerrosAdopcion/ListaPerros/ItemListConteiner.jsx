@@ -35,14 +35,10 @@ const ItemListConteiner = () => {
         case "juguetesPelota":
             doc = ('../Data/productos.json')
             break;
-        case "/":
-            doc = ('../Data/productos.json')
-            break;
         default:
             doc = ('../Data/perros.json')
             break;
     }
-
     useEffect(() => {
         setTimeout(() => {
             fetch(doc)

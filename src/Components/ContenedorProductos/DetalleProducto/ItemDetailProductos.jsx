@@ -1,6 +1,6 @@
 import React from 'react'
 import ItemCount from '../../AgregarProductos/ItemCount'
-import './../../../CSS/productos.css'
+import './../../../CSS/detalleProducto.css'
 import { useNavigate } from "react-router-dom";
 
 const ItemDetailProductos = ({ item }) => {
@@ -26,7 +26,7 @@ const ItemDetailProductos = ({ item }) => {
                 <div className='beneficioDetalleProducto'>
                     <p className="tituloBeneficioDetalleProducto">Beneficios</p>
                     <ul className='beneficiosDetalleProducto'>
-                        {item.beneficios.map((item, index) => <li key={index}>{item}</li>)}
+                        {item.beneficios?.map((item, index) => <li key={index}>{item}</li>)}
                     </ul>
                 </div>
                 <div className='precioAgregarDetalleProducto'>

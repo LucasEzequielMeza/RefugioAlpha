@@ -110,8 +110,7 @@
             "Ideal para perros que mastican mucho."
         ],
         "stock": 15,
-        "categoria": "juguetes",
-        "subCategoria": "dental",
+        "categoria": "juguetesDental",
         "img": "./../IMG/ImgProductos/Juguetes Miniatura/Dental/beneboneMordillo.png",
         "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Dental/beneboneMordillo.png"
     },
@@ -128,8 +127,7 @@
             "Promueve la salud dental de tu mascota."
         ],
         "stock": 6,
-        "categoria": "juguetes",
-        "subCategoria": "dental",
+        "categoria": "juguetesDental",
         "img": "./../IMG/ImgProductos/Juguetes Miniatura/Dental/kongHueso.png",
         "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Dental/kongHueso.png"
     },
@@ -146,8 +144,7 @@
             "Promueve la salud dental de tu mascota."
         ],
         "stock": 13,
-        "categoria": "juguetes",
-        "subCategoria": "dental",
+        "categoria": "juguetesDental",
         "img": "./../IMG/ImgProductos/Juguetes Miniatura/Dental/canCatHueso.png",
         "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Dental/canCatHueso.png"
     },
@@ -164,8 +161,7 @@
             "Fácil de lavar."
         ],
         "stock": 7,
-        "categoria": "juguetes",
-        "subCategoria": "interactivo",
+        "categoria": "juguetesInteractivo",
         "img": "./../IMG/ImgProductos/Juguetes Miniatura/Interactivo/kongExtrem.png",
         "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Interactivo/kongExtrem.png"
     },
@@ -182,8 +178,7 @@
             "Ayuda a que tu perro tenga dientes y encías sanas."
         ],
         "stock": 10,
-        "categoria": "juguetes",
-        "subCategoria": "interactivo",
+        "categoria": "juguetesInteractivo",
         "img": "./../IMG/ImgProductos/Juguetes Miniatura/Interactivo/kongTraxx.png",
         "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Interactivo/kongTraxx.png"
     },
@@ -201,8 +196,7 @@
             "Recomendado por veterinarios y entrenadores alrededor del mundo."
         ],
         "stock": 4,
-        "categoria": "juguetes",
-        "subCategoria": "interactivo",
+        "categoria": "juguetesInteractivo",
         "img": "./../IMG/ImgProductos/Juguetes Miniatura/Interactivo/kongClassic.png",
         "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Interactivo/kongClassic.png"
     },
@@ -217,8 +211,7 @@
             "Resistente."
         ],
         "stock": 20,
-        "categoria": "juguetes",
-        "subCategoria": "pelota",
+        "categoria": "juguetesPelota",
         "img": "./../IMG/ImgProductos/Juguetes Miniatura/Pelota/pelotaPuppis.png",
         "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Pelota/pelotaPuppis.png"
     },
@@ -233,8 +226,7 @@
             "Resistente a pinchazos, asegurando un juego seguro y continuo para tu cachorro."
         ],
         "stock": 17,
-        "categoria": "juguetes",
-        "subCategoria": "pelota",
+        "categoria": "juguetesPelota",
         "img": "./../IMG/ImgProductos/Juguetes Miniatura/Pelota/pelotaKong.png",
         "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Pelota/pelotaKong.png"
     },
@@ -252,8 +244,7 @@
             "Ideal para jugar con tu perro y promover su salud."
         ],
         "stock": 13,
-        "categoria": "juguetes",
-        "subCategoria": "pelota",
+        "categoria": "juguetesPelota",
         "img": "./../IMG/ImgProductos/Juguetes Miniatura/Pelota/pelotaSqueaker.png",
         "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Pelota/pelotaSqueaker.png"
     },
@@ -269,8 +260,7 @@
             "Confeccionada con tela resistente."
         ],
         "stock": 7,
-        "categoria": "juguetes",
-        "subCategoria": "soga",
+        "categoria": "juguetesSoga",
         "img": "./../IMG/ImgProductos/Juguetes Miniatura/Soga/CanCatDoble.png",
         "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Soga/CanCatDoble.png"
     },
@@ -288,8 +278,7 @@
             "Favorece la higiene dental"
         ],
         "stock": 4,
-        "categoria": "juguetes",
-        "subCategoria": "soga",
+        "categoria": "juguetesSoga",
         "img": "./../IMG/ImgProductos/Juguetes Miniatura/Soga/CanCatFlotadora.png",
         "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Soga/CanCatFlotadora.png"
     },
@@ -306,8 +295,7 @@
             "Es una gran opción para jugar a tironear con tu mascota y mejorar su vínculo."
         ],
         "stock": 10,
-        "categoria": "juguetes",
-        "subCategoria": "soga",
+        "categoria": "juguetesSoga",
         "img": "./../IMG/ImgProductos/Juguetes Miniatura/Soga/CanCatTrenzada.png",
         "imgDescripcion": "./../IMG/ImgProductos/Juguetes/Soga/CanCatTrenzada.png"
     }
