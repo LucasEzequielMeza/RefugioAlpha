@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import ItemList from './ItemList'
+import ItemList from '../Componentes/ItemList'
 import { useParams } from 'react-router-dom';
 
 const ItemListConteiner = () => {
@@ -9,39 +9,39 @@ const ItemListConteiner = () => {
     const { categoria } = useParams()
 
 
-    let doc;
+    let rutaJSON;
     switch (categoria) {
         case "razaChicos":
-            doc = ('../Data/perros.json')
+            rutaJSON = ('../Data/perros.json')
             break;
         case "razaMedianos":
-            doc = ('../Data/perros.json')
+            rutaJSON = ('../Data/perros.json')
             break;
         case "razaGrandes":
-            doc = ('../Data/perros.json')
+            rutaJSON = ('../Data/perros.json')
             break;
         case "alimentos":
-            doc = ('../Data/productos.json')
+            rutaJSON = ('../Data/productos.json')
             break;
         case "juguetesDental":
-            doc = ('../Data/productos.json')
+            rutaJSON = ('../Data/productos.json')
             break;
         case "juguetesSoga":
-            doc = ('../Data/productos.json')
+            rutaJSON = ('../Data/productos.json')
             break;
         case "juguetesInteractivo":
-            doc = ('../Data/productos.json')
+            rutaJSON = ('../Data/productos.json')
             break;
         case "juguetesPelota":
-            doc = ('../Data/productos.json')
+            rutaJSON = ('../Data/productos.json')
             break;
         default:
-            doc = ('../Data/perros.json')
+            rutaJSON = ('../Data/perros.json')
             break;
     }
     useEffect(() => {
         setTimeout(() => {
-            fetch(doc)
+            fetch(rutaJSON)
                 .then((respuesta) => respuesta.json())
                 .then((respuesta) => {
                     if (categoria) {
@@ -54,10 +54,12 @@ const ItemListConteiner = () => {
         }, 2000)
     }, [categoria])
 
-
+    console.log("ruta" + ruta)
+    console.log("rutaJSON" + rutaJSON)
     return (
         <div>
-            {loading ? <p>Loading...</p> : <ItemList item={ruta} />}
+            {loading ? <p>Loading...</p> : <ItemList JSONaMapear={ruta} JSONrecibido={rutaJSON} />}
+
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import ItemCount from '../../AgregarProductos/ItemCount'
-import './../../../CSS/detalleProducto.css'
+import ItemCount from './ItemCount'
+import './../../CSS/detalleProducto.css'
 import { useNavigate } from "react-router-dom";
 
 const ItemDetailProductos = ({ item }) => {

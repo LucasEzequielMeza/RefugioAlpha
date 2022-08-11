@@ -1,5 +1,5 @@
 import React from 'react'
-import './../../../CSS/detallePerros.css'
+import './../../CSS/detallePerros.css'
 
 const ItemDetail = ({ itemPerro }) => {
 
