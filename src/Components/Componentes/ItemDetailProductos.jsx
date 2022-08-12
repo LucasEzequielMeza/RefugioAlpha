@@ -1,18 +1,20 @@
 import React, { useState, useContext, useEffect } from 'react'
 import ItemCount from './ItemCount'
 import './../../CSS/detalleProducto.css'
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { CartContext } from '../Context/CartContext';
 
 const ItemDetailProductos = ({ item }) => {
     const { agregarAlCarrito } = useContext(CartContext)
     const [count, setCount] = useState(0)
+    const [button, setButton] = useState(true)
 
     const onAdd = (cantidadItems) => {
         console.log(`Agregaste ${cantidadItems} de items al carrito`)
         setCount(cantidadItems)
         agregarAlCarrito(item, cantidadItems)
 
+        setButton(false)
     }
     useEffect(() => {
         console.log({ count })
@@ -37,7 +39,7 @@ const ItemDetailProductos = ({ item }) => {
                 </div>
                 <div className='precioAgregarDetalleProducto'>
                     <p className='precioDetalleProducto'>$ {item.precio}</p>
-                    <ItemCount initial={1} stock={item.stock} onAdd={onAdd} />
+                    {button === true ? <ItemCount initial={1} stock={item.stock} onAdd={onAdd} /> : <Link to={'/cart'}><button>Finalizar Compra</button></Link>}
                 </div>
             </div>
             <br />
