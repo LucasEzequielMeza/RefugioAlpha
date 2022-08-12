@@ -54,8 +54,6 @@ const ItemListConteiner = () => {
         }, 2000)
     }, [categoria])
 
-    console.log("ruta" + ruta)
-    console.log("rutaJSON" + rutaJSON)
     return (
         <div>
             {loading ? <p>Loading...</p> : <ItemList JSONaMapear={ruta} JSONrecibido={rutaJSON} />}

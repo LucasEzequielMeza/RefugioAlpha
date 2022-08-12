@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CartContext } from '../Context/CartContext'
 import './../../CSS/detallePerros.css'
 
 const ItemDetail = ({ itemPerro }) => {
 
+    const { agregarAlCarrito } = useContext(CartContext)
+    console.log(agregarAlCarrito)
     return (
         <div className='contenedorDetallePerro'>
             <br />

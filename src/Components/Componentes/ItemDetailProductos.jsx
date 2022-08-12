@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import ItemCount from './ItemCount'
 import './../../CSS/detalleProducto.css'
 import { useNavigate } from "react-router-dom";
+import { CartContext } from '../Context/CartContext';
 
 const ItemDetailProductos = ({ item }) => {
-    const navigate = useNavigate();
+    const { agregarAlCarrito } = useContext(CartContext)
+    const [count, setCount] = useState(0)
 
     const onAdd = (cantidadItems) => {
         console.log(`Agregaste ${cantidadItems} de items al carrito`)
-        navigate('/cart')
-    }
+        setCount(cantidadItems)
+        agregarAlCarrito(item, cantidadItems)
 
+    }
+    useEffect(() => {
+        console.log({ count })
+    }, [count])
 
     return (
         <div className='contenedorDetalleProducto'>
