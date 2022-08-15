@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import './../../CSS/productos.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-const ItemProductos = ({ producto }) => {
+
+const ItemProd = ({ producto }) => {
     return (
         <>
             <div className='contenedroCards'>
@@ -23,8 +24,7 @@ const ItemProductos = ({ producto }) => {
                 </Card>
             </div>
         </>
-
     )
 }
 
-export default ItemProductos
+export default ItemProd

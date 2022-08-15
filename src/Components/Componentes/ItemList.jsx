@@ -4,13 +4,12 @@ import ItemProductos from './ItemProductos'
 import Item from './Item'
 
 
-const ItemList = ({ JSONaMapear, JSONrecibido }) => {
+const ItemList = ({ JSONaMapear, card }) => {
 
     return (
         <div className='conteiner contenedorItemlist'>
-            <div className='perros productos'>
-                {JSONrecibido !== ('../Data/producto.json') ? JSONaMapear.map((item) => <Item key={item.id} perro={item} />) : JSONaMapear.map((item) => <ItemProductos key={item.id} producto={item} />)}
-            </div>
+            {card === 'perros' ? <div className='perros'>{JSONaMapear.map((item) => <Item key={item.id} perro={item} />)}</div>
+                : <div className='producto'>{JSONaMapear.map((item) => <ItemProductos key={item.id} producto={item} />)}</div>}
         </div>
     )
 

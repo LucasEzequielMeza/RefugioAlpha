@@ -4,7 +4,9 @@ import NavBar from './Components/NavBar/NavBar';
 import ProovedorCarrito from './Components/Context/CartContext';
 import ItemListConteiner from './Components/Contenedores/ItemListConteiner';
 import ItemDetailsConteiner from './Components/Contenedores/ItemDetailsConteiner';
-import Cart from './Components/Componentes/Cart';
+import Cart from './Components/Contenedores/Cart';
+import ItemContainerProductos from './Components/Contenedores/ItemContainerProductos';
+
 
 
 
@@ -16,9 +18,11 @@ function App() {
         <NavBar />
         <Routes>
           <Route exact path='/' element={<ItemListConteiner />} />
+          <Route exact path='/categoria/:categoria' element={<ItemListConteiner />} />
+          <Route exact path='/productos' element={<ItemContainerProductos />} />
+          <Route exact path='/productos' element={<ItemContainerProductos />} />
           <Route exact path='/item/:id' element={<ItemDetailsConteiner />} />
-          <Route path='/categoria/:categoria' element={<ItemListConteiner />} />
-          <Route path='/cart' element={<Cart />} />
+          <Route exact path='/cart' element={<Cart />} />
         </Routes>
       </ProovedorCarrito>
 

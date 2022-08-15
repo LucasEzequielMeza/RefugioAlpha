@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { MdShoppingCart } from "react-icons/md";
 import styled from 'styled-components';
 import { CartContext } from '../Context/CartContext';
-
+import { Link } from 'react-router-dom';
 
 const StyledCount = styled.h5`
   color: white;
@@ -11,14 +11,18 @@ const StyledCount = styled.h5`
 `
 
 const CartWidget = () => {
-
     const compartirValores = useContext(CartContext)
-    console.log(compartirValores)
+    const { cantidadEnCarrito } = compartirValores
+
+    if (cantidadEnCarrito === 0) {
+        return <></>
+    }
+
     return (
         <div>
-            <MdShoppingCart />
-            <StyledCount>{compartirValores.cantidadEnCarrito}</StyledCount>
-        </div>
+            <Link to={'/cart'}><MdShoppingCart /></Link>
+            <StyledCount>{cantidadEnCarrito}</StyledCount>
+        </div >
     )
 }
 

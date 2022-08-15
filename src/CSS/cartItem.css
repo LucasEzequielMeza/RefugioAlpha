@@ -1,0 +1,97 @@
+html {
+    background-color: white;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "cardPrecio cardPrecio cardPrecio"
+        "btn btn btn"
+        "img img img";
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: auto auto auto;
+
+}
+
+.cardPrecioFinal {
+    grid-area: cardPrecio;
+}
+
+.buttons {
+    grid-area: btn;
+}
+
+.imgPago {
+    grid-area: img;
+}
+
+.btn {
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.contenedorCarrito {
+    margin-top: 20px;
+}
+
+.carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    border: inset;
+}
+
+.ImgEnCarrito {
+    grid-area: img;
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 5px;
+}
+
+.imgCarrito {
+    width: 100px;
+    height: 100px;
+}
+
+.datosCarrito {
+    grid-area: datos;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.cantidadCarrito {
+    grid-area: cant;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.precioCarrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.cardPrecioFinal {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    padding: 5px;
+}

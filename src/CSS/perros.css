@@ -1,0 +1,40 @@
+html {
+    background-color: white;
+}
+
+.cardPerros {
+    width: 15rem;
+    margin: 0.5rem;
+    align-items: center;
+    transition: all 400ms ease-in-out;
+}
+
+.cardPerros:hover {
+    transform: scale(1.03);
+}
+
+#infoDatosPerro {
+    height: 18rem;
+}
+
+.datosRazaPerro {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.datosEdadPerro {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.buttonPerro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+}
+
+#informacionPerro {
+    margin-top: 6px;
+    margin-bottom: 2px;
+}

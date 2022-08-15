@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Spinner from 'react-bootstrap/Spinner';
+import './../../CSS/cartItem.css'
 const Loader = () => {
     return (
-        <div>Loader</div>
+        <>
+            <Spinner animation="grow" variant="warning" />
+        </>
     )
 }
 

@@ -16,7 +16,6 @@ const NavBar = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse className='col-1 nav' id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to='/'>Inicio</Nav.Link>
                             <NavDropdown title="Perros en adopcion" id="basic-nav-dropdown">
                                 <NavDropdown.Item as={Link} to='categoria/razaChicos'>Chicos</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to='categoria/razaMedianos'>Medianos</NavDropdown.Item>

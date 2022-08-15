@@ -3,10 +3,12 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetailProductos from '../Componentes/ItemDetailProductos'
 import ItemDetail from '../Componentes/ItemDetail'
+import Loader from '../Componentes/Loader'
 const ItemDetailsConteiner = () => {
     const { id } = useParams()
     const [producto, setProducto] = useState([])
     const [perro, setPerro] = useState([])
+    const [loading, setLoading] = useState(true)
 
     const mostrarUnProducto = (id) => {
 
@@ -40,15 +42,17 @@ const ItemDetailsConteiner = () => {
 
             mostrarUnPerro(id)
 
+            setLoading(false)
         }, 1000)
 
     }, [id])
 
     return (
         <div>
-            <div>
-                {id.includes('p') ? <ItemDetail itemPerro={perro} /> : <ItemDetailProductos item={producto} />}
-            </div>
+            {loading === true ? <Loader />
+                : <div>
+                    {id.includes('p') ? <ItemDetail itemPerro={perro} /> : <ItemDetailProductos item={producto} />}
+                </div>}
         </div>
     )
 }

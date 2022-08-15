@@ -5,47 +5,6 @@ export const CartContext = createContext([])
 const ProovedorCarrito = ({ children }) => {
 
     const [carrito, setCarrito] = useState([])
-    // const agregarAlCarrito = (item, cantidad) => {
-    //     console.log(item, cantidad)
-    //     if (carrito.length === 0) {
-    //         const itemAgregar = {
-    //             ...item,
-    //             cantidad: cantidad
-    //         }
-
-    //         //carrito.push(itemAgregar)
-    //         setCarrito([itemAgregar])
-    //         return
-    //     }
-    //     //logica de duplicados y consistente
-    //     //se obtiene el index del elemento si es que esta duplicado
-    //     const itemDuplicadoIndex = carrito.findIndex((itemEnElCarrito) => itemEnElCarrito.id === item.id)
-    //     //si es mayor o igual a 0, el item esta duplicado en el carrito
-    //     if (itemDuplicadoIndex >= 0) {
-    //         //se crea un objeto con la cantidad actualizada
-    //         const itemActualizado = {
-    //             ...item,
-    //             cantidad: carrito[itemDuplicadoIndex].cantidad + cantidad
-    //         }
-    //         //se crea un borrador del carrito para poder actualizar sin dañar el estado de react
-    //         const carritoDraft = [...carrito]
-    //         //se actualiza el borrador con el item con la cantidad actualizada
-    //         carritoDraft[itemDuplicadoIndex] = itemActualizado
-    //         //actualizamos el carrito con el con el borrador del carrito actualizado
-    //         setCarrito(carritoDraft)
-    //     } else {
-    //         // el item no esta duplicado
-    //         //se crea el item con la cantidad que el usuario ingreso
-    //         const itemAgregar = {
-    //             ...item,
-    //             cantidad: cantidad
-    //         }
-    //         //se crea un carrito borrador para agregar el nuevo item
-    //         const carritoDraft = [...carrito, itemAgregar]
-    //         //se actualiza el carrito con el carritoborrador
-    //         setCarrito(carritoDraft)
-    //     }
-    // }
 
     const agregarAlCarrito = (item, cantidad) => {
         //Verificamos si el producto elegido ya esta agregado en el carrito
@@ -83,13 +42,20 @@ const ProovedorCarrito = ({ children }) => {
         setCarrito([...newCarrito])
     }
 
+    const cantidadEnCarrito = carrito.reduce((acc, item) => acc + item.cantidad, 0)
+
+    const totalPagar = carrito.reduce((acc, item) => acc + item.cantidad * item.precio, 0)
+
+
     const compartirValores = {
         carrito,
-        cantidadEnCarrito: carrito.length,
+        cantidadEnCarrito,
         eliminarCarrito,
         agregarAlCarrito,
-        eliminarProductoCarrito
+        eliminarProductoCarrito,
+        totalPagar,
     }
+
 
     return (
         <CartContext.Provider value={compartirValores}>

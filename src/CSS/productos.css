@@ -1,58 +1,47 @@
-.cardStyle {
+html {
+    background-color: white;
+}
+
+.cardProducto {
     width: 15rem;
-    height: 25rem;
-    margin: .5rem;
+    margin: 0.5rem;
     align-items: center;
+    transition: all 400ms ease-in-out;
 }
 
-.cardImg {
-    width: 200px;
-    height: 200px;
+.cardProducto:hover {
+    transform: scale(1.03);
 }
 
-#cardBody {
-    display: grid;
-    grid-template-areas:
-        "nombre nombre nombre"
-        "desc desc desc"
-        "cat cat cat"
-        "precio precio stock";
-
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
+#infoDatosProducto {
+    height: 15rem;
 }
 
-#nombre {
-    grid-area: nombre;
-
-}
-
-#descripcion {
-    grid-area: desc;
-    margin-bottom: 2px;
-    margin-top: 2px;
-}
-
-#categoria {
-    grid-area: cat;
-    margin-bottom: 2px;
-    margin-top: 2px;
+.datosProducto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 #precio {
-    grid-area: precio;
-    margin-bottom: 2px;
-    margin-top: 2px;
+    margin: 5px;
+    padding: 5px;
 }
 
 #stock {
-    grid-area: stock;
-    margin-bottom: 2px;
-    margin-top: 2px;
+    margin: 2px;
+    padding: 5px;
+}
+
+.buttonProducto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
 }
 
 #informacion {
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 6px;
+    margin-bottom: 2px;
 }
