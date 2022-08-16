@@ -6,6 +6,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
     const sumarProducto = () => {
         if (contador < stock) {
             setContador(contador + 1)
+
         }
     }
 

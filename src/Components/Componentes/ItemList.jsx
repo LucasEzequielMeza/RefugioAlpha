@@ -5,7 +5,7 @@ import Item from './Item'
 
 
 const ItemList = ({ JSONaMapear, card }) => {
-
+    console.log(card)
     return (
         <div className='conteiner contenedorItemlist'>
             {card === 'perros' ? <div className='perros'>{JSONaMapear.map((item) => <Item key={item.id} perro={item} />)}</div>
