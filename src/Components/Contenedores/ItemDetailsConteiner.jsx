@@ -12,6 +12,7 @@ const ItemDetailsConteiner = () => {
     const [loading, setLoading] = useState(true)
 
     const db = getFirestore()
+
     const mostrarUnProducto = (id) => {
         const productosRef = doc(db, 'productos', id)
 
@@ -19,7 +20,6 @@ const ItemDetailsConteiner = () => {
             .then((snapshot) => {
                 setProducto({ ...snapshot.data(), id: snapshot.id })
             }).catch((error) => console.log(error))
-            .finally(() => setLoading(false))
 
     }
 
@@ -30,13 +30,16 @@ const ItemDetailsConteiner = () => {
             .then((snapshot) => {
                 setPerro({ ...snapshot.data(), id: snapshot.id })
             }).catch((error) => console.log(error))
-            .finally(() => setLoading(false))
     }
 
     useEffect(() => {
-        mostrarUnPerro(id);
+        setTimeout(() => {
+            mostrarUnPerro(id);
 
-        mostrarUnProducto(id);
+            mostrarUnProducto(id);
+
+            setLoading(false)
+        }, 2000)
     }, [id])
 
     return (
