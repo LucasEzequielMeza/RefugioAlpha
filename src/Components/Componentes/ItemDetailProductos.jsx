@@ -9,8 +9,6 @@ const ItemDetailProductos = ({ item }) => {
     const [button, setButton] = useState(true)
 
     const onAdd = (cantidadItems) => {
-        console.log(`Agregaste ${cantidadItems} de items al carrito`)
-
         agregarAlCarrito(item, cantidadItems)
 
         setButton(false)

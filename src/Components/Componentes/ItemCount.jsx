@@ -13,6 +13,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
     const restarProducto = () => {
         if (contador > 1) {
             setContador(contador - 1)
+
         }
     }
 

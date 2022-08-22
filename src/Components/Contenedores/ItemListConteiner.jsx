@@ -7,6 +7,7 @@ import { collection, getDocs, getFirestore, query, where } from 'firebase/firest
 
 const ItemListConteiner = () => {
     const [ruta, setRuta] = useState([])
+    const [card, setCard] = useState('perros')
     const [loading, setLoading] = useState(true)
     const { categoria } = useParams()
 
@@ -37,17 +38,17 @@ const ItemListConteiner = () => {
                 }).catch((error) => console.log(error))
         }
     }
-    let card = 'perros'
+
     const eleccionQueRenderizar = (categoria) => {
         if (categoria === 'alimentos' || categoria === 'juguetesDental' || categoria === 'juguetesPelota' || categoria === 'juguetesInteractivo' || categoria === 'juguetesSoga') {
             mostrarProductosCategoria();
-            card = 'productos'
+            setCard('productos')
         } else if (categoria === 'razaChicos' || categoria === 'razaMedianos' || categoria === 'razaGrandes') {
             mostrarPerros()
-            card = 'perros'
+            setCard('perros')
         } else {
             mostrarPerros();
-            card = 'perros'
+            setCard('perros')
         }
     }
 
@@ -58,7 +59,6 @@ const ItemListConteiner = () => {
         }, 2000)
     }, [categoria])
 
-    console.log(card)
     return (
         <div>
             {loading === true ? <Loader /> : <ItemList JSONaMapear={ruta} card={card} />}
