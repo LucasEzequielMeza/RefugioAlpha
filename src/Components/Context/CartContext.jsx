@@ -7,15 +7,10 @@ const ProovedorCarrito = ({ children }) => {
     const [carrito, setCarrito] = useState([])
 
     const agregarAlCarrito = (item, cantidad) => {
-        //Verificamos si el producto elegido ya esta agregado en el carrito
         if (carrito.some((elemento) => elemento.id === item.id)) {
-            //Buscamos el indice del producto seleccionado
             let indexProducto = carrito.findIndex((producto) => producto.id === item.id)
-            //Guardamos ese index en un nuevo producto
             let producto = carrito[indexProducto]
-            //Le sumamos al producto existente la cantidad elegida
             producto.cantidad = producto.cantidad + cantidad;
-            //Hacemos una copia del carrito
             const newCarrito = [...carrito];
             newCarrito.splice(indexProducto, 1, producto);
 
@@ -30,7 +25,6 @@ const ProovedorCarrito = ({ children }) => {
     }
 
     const eliminarCarrito = () => {
-        //Seteamos el carrito
         setCarrito([])
     }
 
