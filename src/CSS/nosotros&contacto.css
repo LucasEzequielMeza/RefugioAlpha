@@ -1,0 +1,29 @@
+.imgNosotros {
+    width: 100vh;
+}
+
+.imgContacto {
+    margin: 15px;
+}
+
+.infoNosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.10rem;
+}
+
+.textoInfoNosotros {
+    width: 50%;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}

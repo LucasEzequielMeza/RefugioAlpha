@@ -20,7 +20,7 @@ const Checkout = () => {
 
     const finalizarCompra = (evento) => {
         evento.preventDefault()
-        if (Object.values(comprador).length === 4) {
+        if (Object.values(comprador).length !== 4) {
             alert('Completar todos los campos')
         } else {
             const coleccionVentas = collection(db, "ventas")
@@ -40,13 +40,15 @@ const Checkout = () => {
     return (
         <>
             {!ordenId ?
-                <form onSubmit={finalizarCompra}>
-                    <input type="text" placeholder="Nombre Completo" name="nombre" onChange={datosComprador} />
-                    <input type="number" placeholder="Numero de telefono" name="telefono" onChange={datosComprador} />
-                    <input type="email" placeholder='Email@email.com' name='email' onChange={datosComprador} />
-                    <input type="text" placeholder="Direccion completa" name="direccion" onChange={datosComprador} />
-                    <button type='submit'>Finalizar Compra</button>
-                </form>
+                <div>
+                    <form onSubmit={finalizarCompra}>
+                        <input type="text" placeholder="Nombre Completo" name="nombre" onChange={datosComprador} requerid />
+                        <input type="number" placeholder="Numero de telefono" name="telefono" onChange={datosComprador} requerid />
+                        <input type="email" placeholder='Email@email.com' name='email' onChange={datosComprador} requerid />
+                        <input type="text" placeholder="Direccion completa" name="direccion" onChange={datosComprador} requerid />
+                        <input type="submit" value="Finalizar compra" />
+                    </form>
+                </div>
                 :
                 <div>
                     <h3>Gracias por su compra</h3>

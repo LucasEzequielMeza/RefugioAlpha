@@ -3,6 +3,7 @@ import { MdShoppingCart } from "react-icons/md";
 import styled from 'styled-components';
 import { CartContext } from '../Context/CartContext';
 import { Link } from 'react-router-dom';
+import './../../CSS/cartWidget.css'
 
 const StyledCount = styled.h5`
   color: white;
@@ -19,9 +20,9 @@ const CartWidget = () => {
     }
 
     return (
-        <div>
-            <Link to={'/cart'}><MdShoppingCart /></Link>
-            <StyledCount>{cantidadEnCarrito}</StyledCount>
+        <div className='cart'>
+            <span><Link to={'/cart'}><MdShoppingCart /></Link></span>
+            <div className='cart-total'><StyledCount>{cantidadEnCarrito}</StyledCount></div>
         </div >
     )
 }

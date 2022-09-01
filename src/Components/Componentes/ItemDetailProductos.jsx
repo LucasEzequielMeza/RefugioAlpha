@@ -34,7 +34,11 @@ const ItemDetailProductos = ({ item }) => {
                 </div>
                 <div className='precioAgregarDetalleProducto'>
                     <p className='precioDetalleProducto'>$ {item.precio}</p>
-                    {button === true ? <ItemCount initial={1} stock={item.stock} onAdd={onAdd} /> : <Link to={'/cart'}><button>Finalizar Compra</button></Link>}
+                    {button === true ? <ItemCount initial={1} stock={item.stock} onAdd={onAdd} /> :
+                        <div>
+                            <Link to={'/cart'}><button className='btn btn-dark'>Ir al carrito</button></Link>
+                            <Link to={'/productos'}><button className='btn btn-dark'>Seguir comprando</button></Link>
+                        </div>}
                 </div>
             </div>
             <br />

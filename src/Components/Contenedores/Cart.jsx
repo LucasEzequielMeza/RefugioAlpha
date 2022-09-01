@@ -20,7 +20,7 @@ const Cart = () => {
                     </div>
                     <div className='buttons'>
                         <Link to='/productos'><button className='btn btn-primary'>Seguir Comprando</button></Link>
-                        <Link to={'/checkout'}><button className='btn btn-success'>Finalizar Compra</button></Link>
+                        <Link to='/checkout'><button className='btn btn-success'>Finalizar Compra</button></Link>
                         <button className='btn btn-dark' onClick={eliminarCarrito}>Vaciar carrito</button>
                     </div>
                     <div className='imgPago'>
@@ -33,7 +33,7 @@ const Cart = () => {
                     <Link to='/productos'><button className='btn btn-danger'>Realizar compra</button></Link>
                 </div>
             }
-        </div>
+        </div >
     )
 }
 
