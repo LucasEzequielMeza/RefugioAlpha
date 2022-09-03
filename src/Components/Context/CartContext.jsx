@@ -22,6 +22,7 @@ const ProovedorCarrito = ({ children }) => {
             }
             setCarrito([...carrito, producto])
         }
+
     }
 
     const eliminarCarrito = () => {
