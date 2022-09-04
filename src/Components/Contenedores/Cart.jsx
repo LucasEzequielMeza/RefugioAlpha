@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
 import CartItem from '../Componentes/CartItem'
 import { CartContext } from '../Context/CartContext';
+import './../../CSS/prueba.css'
 const Cart = () => {
     const compartirValores = useContext(CartContext)
     const { carrito, cantidadEnCarrito, eliminarCarrito, eliminarProductoCarrito, totalPagar } = compartirValores
@@ -28,8 +29,8 @@ const Cart = () => {
                     </div>
                 </div>)
                 :
-                <div>
-                    <p>No hay productos en el carrito</p>
+                <div className='mensajeExito'>
+                    <p className='mensajeTitulo'>No hay productos en el carrito</p>
                     <Link to='/productos'><button className='btn btn-danger'>Realizar compra</button></Link>
                 </div>
             }

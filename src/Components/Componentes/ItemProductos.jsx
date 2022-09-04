@@ -13,8 +13,8 @@ const ItemProductos = ({ producto }) => {
                         <Card.Title id='nombre'><h6>{producto.nombre}</h6></Card.Title>
                         <Card.Text id='descripcion'>{producto.descripcion}</Card.Text>
                         <div className='datosProducto'>
-                            <Card.Text id='precio'>Precio: {producto.precio}$</Card.Text>
-                            <Card.Text id='stock'>Stock: {producto.stock}</Card.Text>
+                            <Card.Text id='precio'><b>Precio:</b> {producto.precio}$</Card.Text>
+                            <Card.Text id='stock'><b>Stock:</b> {producto.stock}</Card.Text>
                         </div>
                         <div className='buttonProducto'>
                             <Link to={`/item/${producto.id}`}><Button variant="primary" id="informacion">Mas informacion</Button></Link>

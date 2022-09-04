@@ -15,16 +15,22 @@ html {
 
 #infoDatosPerro {
     height: 18rem;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .datosRazaPerro {
     margin-bottom: 2px;
     margin-top: 2px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .datosEdadPerro {
     margin-bottom: 2px;
     margin-top: 2px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .buttonPerro {
@@ -37,4 +43,6 @@ html {
 #informacionPerro {
     margin-top: 6px;
     margin-bottom: 2px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

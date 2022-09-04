@@ -30,6 +30,7 @@ const Input = ({ type, placeholder, name, expRegu, leyendaError, estado, cambiar
         <div>
             <GrupoInput>
                 <InputElemento
+                    className='input'
                     type={type}
                     placeholder={placeholder}
                     name={name}

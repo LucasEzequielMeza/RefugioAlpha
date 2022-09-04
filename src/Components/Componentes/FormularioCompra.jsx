@@ -18,7 +18,6 @@ const ForularioCompra = () => {
 
 
 
-
     const exprecionesRegulares = {
         expRegNombre: /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/,
         expRegEmail: /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/,
@@ -119,12 +118,13 @@ const ForularioCompra = () => {
                     </MensajeError>}
                     <ContenedorBoton>
                         <Boton type='submit'>Finalizar Compra</Boton>
+                        <Link to={'/productos'}><Boton type='submit'>Volver a la tienda</Boton></Link>
                     </ContenedorBoton>
                 </Formulario>
                 :
-                <div>
-                    <h3>Gracias por su compra</h3>
-                    <h4>Su numero de orden es: {ordenId}</h4>
+                <div className='mensajeExito'>
+                    <p className='mensajeTitulo'>Gracias por su compra</p>
+                    <p className='mensajeNumeroOrden'>Su numero de orden es: <b>{ordenId}</b></p>
                     <Link to={'/productos'}><button className='btn btn-dark'>Productos</button></Link>
                 </div>
             }

@@ -41,24 +41,25 @@
 
 .nombreDetallePerro {
     margin-bottom: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .descripcionDetallePerro {
     font-size: 1.25rem;
     margin: 10px;
     font-style: initial;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .edadDetallePerro {
-    margin-bottom: 30px;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-.razaDetalleProducto {
+.razaDetallePerro {
     font-size: 1.25rem;
     margin: 10px;
     font-style: initial;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

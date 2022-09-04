@@ -71,7 +71,7 @@ const FormularioAdopcion = () => {
     return (
         <main>
             {!ordenId ?
-                <Formulario onSubmit={enviarFormulario}>
+                <Formulario className='formulario' onSubmit={enviarFormulario}>
                     <Input
                         type="text"
                         leyendaError="Este campo es obligatorio"
@@ -127,8 +127,8 @@ const FormularioAdopcion = () => {
                     </ContenedorBoton>
                 </Formulario>
                 :
-                <div>
-                    <h3>Gracias, en breve nos estaremos contactando</h3>
+                <div className='mensajeExito'>
+                    <p className='mensajeTitulo'>Gracias, en breve nos estaremos contactando</p>
                     <Link to={'/productos'}><button className='btn btn-dark'>Productos</button></Link>
                 </div>
             }

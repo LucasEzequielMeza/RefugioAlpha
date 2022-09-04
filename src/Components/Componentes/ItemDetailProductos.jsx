@@ -10,7 +10,6 @@ const ItemDetailProductos = ({ item }) => {
 
     const onAdd = (cantidadItems) => {
         agregarAlCarrito(item, cantidadItems)
-
         setButton(false)
     }
 

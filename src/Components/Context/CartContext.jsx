@@ -1,16 +1,38 @@
-import { createContext, useState } from "react";
-
+import { createContext, useState, useEffect } from "react";
+import swal from 'sweetalert'
 export const CartContext = createContext([])
 
 const ProovedorCarrito = ({ children }) => {
+    const [carrito, setCarrito] = useState(() => {
+        const localData = localStorage.getItem("carrito")
+        return localData ? JSON.parse(localData) : []
+    })
 
-    const [carrito, setCarrito] = useState([])
+    const alerta = () => {
+        swal({
+            icon: 'error',
+            title: "Lo sentimos",
+            text: "No contamos con stock suficiente",
+            timer: "4000"
+        })
+    }
+
+    useEffect(() => {
+        localStorage.setItem("carrito", JSON.stringify(carrito))
+    }, [carrito])
+
 
     const agregarAlCarrito = (item, cantidad) => {
+        item.stock--
         if (carrito.some((elemento) => elemento.id === item.id)) {
             let indexProducto = carrito.findIndex((producto) => producto.id === item.id)
             let producto = carrito[indexProducto]
-            producto.cantidad = producto.cantidad + cantidad;
+            if (item.stock <= cantidad) {
+                alerta()
+                return
+            } else {
+                producto.cantidad = producto.cantidad + cantidad;
+            }
             const newCarrito = [...carrito];
             newCarrito.splice(indexProducto, 1, producto);
 
@@ -22,7 +44,7 @@ const ProovedorCarrito = ({ children }) => {
             }
             setCarrito([...carrito, producto])
         }
-
+        localStorage.setItem("carrito", JSON.stringify(carrito))
     }
 
     const eliminarCarrito = () => {
@@ -48,7 +70,7 @@ const ProovedorCarrito = ({ children }) => {
         eliminarCarrito,
         agregarAlCarrito,
         eliminarProductoCarrito,
-        totalPagar,
+        totalPagar
     }
 
 

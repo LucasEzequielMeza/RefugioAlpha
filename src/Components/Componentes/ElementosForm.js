@@ -8,17 +8,19 @@ const colores = {
 }
 
 const Formulario = styled.form`
-display:grid;
-grid-template-colums: 1fr;
-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 const GrupoInput = styled.div`
 position: relative;
 z-index: 90;
+width: 800px;
 `
 const GrupoTextArea = styled.div`
 position: relative;
 z-index: 90;
+width: 800px;
 `
 const InputElemento = styled.input`
 width: 100%;
@@ -101,7 +103,9 @@ const ContenedorBoton = styled.div`
 display: flex;
 flex - direction: column;
 aling - items: center;
-grid - column: span 2; `
+grid - column: span 2; 
+padding: 20px
+margin: 10px`
 
 const Boton = styled.button`
 
@@ -114,6 +118,7 @@ font - weight: bold;
 border: none;
 border - radius: 3px;
 cursor: pointer;
+margin: 15px;
 transition: .1s ease all
 
     &:hover{
